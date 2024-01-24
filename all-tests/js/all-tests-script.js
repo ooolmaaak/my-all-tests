@@ -1,22 +1,60 @@
-const titleEl = document.createElement("h1");
-// create element in memory
-titleEl.textContent = "New Heading";
-titleEl.classList.add("page-tutle");
+// console.log(document);
 
-document.body.appendChild(titleEl);
+// const body = document.body;
+// console.log(body);
 
-const imageEl = document.createElement("img");
-imageEl.src =
-  "https://images.pexels.com/photos/19882770/pexels-photo-19882770.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+// console.log(list);
 
-document.body.appendChild(imageEl);
+// list.classList.add("test");
+// const parentItem = list.parentNode;
 
-const buttonEl = document.querySelector(".magic-btn");
+// console.log(parentItem); // search parent of list = body
 
-function changeImage() {
-  const newImage =
-    "https://images.pexels.com/photos/18844139/pexels-photo-18844139.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
-  imageEl.src = newImage;
-}
+// console.log(firstElItem.parentNode); // search first elem in ul
 
-buttonEl.addEventListener("click", changeImage);
+// console.log(firstElItem.nextElementSibling); // search sibling in to first li
+
+// const lastElItem = list.lastElementChild;
+// console.log(lastElItem); // search last item on list
+
+// const allElementsOnList = list.children;
+// console.log(allElementsOnList);
+
+// const searchElementsByItem = document.querySelector("li");
+// // console.log(searchElementsByItem);
+
+// const searchElementsByClass = document.querySelectorAll(".site-nav-item");
+// // console.log(searchElementsByClass);
+
+// const printTextByElement = searchElementsByItem.textContent;
+// // console.log(printTextByElement);
+
+// // console.log(searchElementsByItem.classList.contains("site-nav-item"));
+
+// // console.log(list.classList);
+
+// // console.log(document);
+
+// const testColor = document.querySelector(".test");
+// // testColor.style.backgroundColor = "red";
+// // testColor.style.fontWeigh = "700";
+
+// // list.remove();
+
+// const newItems = ["Контакти", "Партнерство"];
+// const list = document.querySelector(".site-nav");
+
+// const createElements = newItems
+//   .map(
+//     (newItem) => `<li class="site-nav-item site-nav__item-b">${newItem}</li>`
+//   )
+//   .join("");
+
+// console.log(createElements);
+// list.innerHTML += createElements;
+
+// const firstElItem = list.firstElementChild;
+
+// console.log(firstElItem);
+
+// firstElItem.remove();
