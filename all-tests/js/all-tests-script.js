@@ -1,18 +1,22 @@
-const select = document.querySelector(".pizza-select");
-const textOutput = document.querySelector(".text-output");
-const valueOutput = document.querySelector(".value-output");
+const titleEl = document.createElement("h1");
+// create element in memory
+titleEl.textContent = "New Heading";
+titleEl.classList.add("page-tutle");
 
-select.addEventListener("change", setOutput);
+document.body.appendChild(titleEl);
 
-function setOutput(event) {
-  const selectedOptionValue = event.currentTarget.value;
-  console.log("🚀 ~ setOutput ~ selectedOptionValue:", selectedOptionValue);
-  const selectedOptionIndex = event.currentTarget.selectedIndex;
-  console.log("🚀 ~ setOutput ~ selectedOptionIndex:", selectedOptionIndex);
-  const selectedOptionText =
-    event.currentTarget.options[selectedOptionIndex].text;
-  console.log(selectedOptionText);
+const imageEl = document.createElement("img");
+imageEl.src =
+  "https://images.pexels.com/photos/19882770/pexels-photo-19882770.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
 
-  textOutput.textContent = selectedOptionText;
-  valueOutput.textContent = selectedOptionValue;
+document.body.appendChild(imageEl);
+
+const buttonEl = document.querySelector(".magic-btn");
+
+function changeImage() {
+  const newImage =
+    "https://images.pexels.com/photos/18844139/pexels-photo-18844139.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+  imageEl.src = newImage;
 }
+
+buttonEl.addEventListener("click", changeImage);

@@ -1,7 +1,9 @@
-body {
-  margin: 16px;
-}
-
-select {
-  padding: 4px;
+.magic-btn {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(240, 240, 157);
+  border-radius: 10px;
+  border-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
 }
